@@ -1,27 +1,19 @@
 {
-  "name": "natours",
+  "name": "Trillo",
   "version": "1.0.0",
   "description": "Trillo app",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
-    "prefix:css": "postcss css/style.concat.css --use autoprefixer -o css/style.prefix.css",
-    "compress:css": "cleancss -o css/style.css css/style.prefix.css",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "vite build"
   },
   "author": "Jonas",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "clean-css-cli": "^5.6.3",
-    "concat": "^1.0.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1",
-    "sass": "^1.93.2"
+    "autoprefixer": "^10.6.1",
+    "sass": "^1.105.1",
+    "vite": "^8.3.2"
   },
   "browserslist": [
     "last 30 versions"
